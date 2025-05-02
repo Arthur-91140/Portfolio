@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets | Arthur Pruvost Rivière</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Arthur Pruvost Rivière</h1>
+            <p>Étudiant en Informatique</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="projects.html" class="active">Projets</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>Mes Projets</h2>
+                <p>Découvrez les différents projets sur lesquels j'ai travaillé</p>
+            </div>
+        </section>
+
+        <section class="projects" id="projects-list">
+            <div class="container">
+                <div class="project-full" id="edt-iut">
+                    <div class="project-header">
+                        <h3>Emploi du Temps IUT d'Orsay</h3>
+                        <div class="project-tags">
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">API</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-image">
+                            <img src="img/emploi-temps.jpg" alt="Emploi du Temps IUT">
+                        </div>
+                        <div class="project-description">
+                            <h4>Description</h4>
+                            <p>Application web permettant de consulter l'emploi du temps des étudiants de l'IUT d'Orsay avec une interface claire et intuitive.</p>
+                            
+                            <h4>Fonctionnalités</h4>
+                            <ul>
+                                <li>Authentification simplifiée via identifiant au format prénom.nom</li>
+                                <li>Vue journalière avec informations détaillées sur les cours</li>
+                                <li>Vue hebdomadaire pour visualiser l'emploi du temps sur la semaine</li>
+                                <li>Navigation temporelle entre les jours/semaines</li>
+                                <li>Affichage par type de cours (TP, CM, Projet, etc.)</li>
+                                <li>Design responsive adapté à tous les appareils</li>
+                            </ul>
+                            
+                            <h4>Architecture technique</h4>
+                            <ul>
+                                <li>Frontend: HTML5, CSS3, JavaScript vanilla</li>
+                                <li>Communication avec l'API de l'IUT d'Orsay</li>
+                                <li>Design responsive avec CSS moderne (variables, flexbox, grid)</li>
+                            </ul>
+                            
+                            <div class="project-links">
+                                <a href="https://github.com/Arthur-91140/edt-iut-orsay" class="btn secondary" target="_blank"><i class="fab fa-github"></i> Voir sur GitHub</a>
+                                <a href="#" class="btn primary" target="_blank"><i class="fas fa-external-link-alt"></i> Voir le site</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-full" id="absence-iut">
+                    <div class="project-header">
+                        <h3>Système de Consultation des Absences</h3>
+                        <div class="project-tags">
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">API</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-image">
+                            <img src="img/absences.jpg" alt="Système de Consultation des Absences">
+                        </div>
+                        <div class="project-description">
+                            <h4>Description</h4>
+                            <p>Interface web permettant aux étudiants de consulter leurs absences à l'IUT d'Orsay, avec une visualisation claire des données.</p>
+                            
+                            <h4>Fonctionnalités</h4>
+                            <ul>
+                                <li>Consultation des absences, retards et exclusions</li>
+                                <li>Statistiques et récapitulatifs visuels</li>
+                                <li>Interface utilisateur intuitive et moderne</li>
+                                <li>Animations pour améliorer l'expérience utilisateur</li>
+                            </ul>
+                            
+                            <h4>Architecture technique</h4>
+                            <ul>
+                                <li>Interface utilisateur en HTML5/CSS3 avec animations JavaScript</li>
+                                <li>Architecture responsive pour tous types d'écrans</li>
+                                <li>Intégration avec l'API de l'IUT pour la récupération des données</li>
+                            </ul>
+                            
+                            <div class="project-links">
+                                <a href="https://github.com/Arthur-91140/absence-iut" class="btn secondary" target="_blank"><i class="fab fa-github"></i> Voir sur GitHub</a>
+                                <a href="#" class="btn primary" target="_blank"><i class="fas fa-external-link-alt"></i> Voir le site</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-full" id="actinium">
+                    <div class="project-header">
+                        <h3>ACTINIUM - Shell C++ Modulaire</h3>
+                        <div class="project-tags">
+                            <span class="tag">C++</span>
+                            <span class="tag">Windows</span>
+                            <span class="tag">Shell</span>
+                            <span class="tag">DLL</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-image">
+                            <img src="img/actinium.jpg" alt="ACTINIUM Shell">
+                        </div>
+                        <div class="project-description">
+                            <h4>Description</h4>
+                            <p>ACTINIUM est un shell C++ qui permet de modifier le comportement des commandes à la volée. Contrairement aux shells traditionnels, ACTINIUM donne un accès direct au code source de chaque commande depuis le terminal, permettant de les modifier et de les recompiler sans quitter l'environnement.</p>
+                            
+                            <h4>Fonctionnalités</h4>
+                            <ul>
+                                <li>Interface en ligne de commande avec support UTF-8</li>
+                                <li>Navigation dans le système de fichiers (ls, cd, pwd)</li>
+                                <li>Exécution de commandes externes via variables d'environnement</li>
+                                <li>Modification et recompilation des commandes à la volée</li>
+                                <li>Architecture modulaire pour faciliter l'ajout de nouvelles commandes</li>
+                            </ul>
+                            
+                            <h4>Architecture technique</h4>
+                            <ul>
+                                <li>Développé en C++ (standard C++11)</li>
+                                <li>Architecture modulaire basée sur les DLL</li>
+                                <li>Compilation intégrée via appels système</li>
+                                <li>Gestion dynamique de la mémoire et des ressources système</li>
+                            </ul>
+                            
+                            <div class="project-links">
+                                <a href="https://github.com/Arthur-91140/actinium" class="btn secondary" target="_blank"><i class="fab fa-github"></i> Voir sur GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-full" id="touch-windows">
+                    <div class="project-header">
+                        <h3>Touch on Windows</h3>
+                        <div class="project-tags">
+                            <span class="tag">C++</span>
+                            <span class="tag">Windows API</span>
+                            <span class="tag">Utilitaire</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-image">
+                            <img src="img/touch-windows.jpg" alt="Touch on Windows">
+                        </div>
+                        <div class="project-description">
+                            <h4>Description</h4>
+                            <p>Implémentation de la commande Unix "touch" pour Windows, permettant de créer des fichiers vides ou de mettre à jour la date de modification d'un fichier existant.</p>
+                            
+                            <h4>Fonctionnalités</h4>
+                            <ul>
+                                <li>Création de fichiers vides</li>
+                                <li>Mise à jour de l'horodatage des fichiers existants</li>
+                                <li>Option pour ouvrir automatiquement le fichier après sa création</li>
+                                <li>Interface en ligne de commande simple</li>
+                            </ul>
+                            
+                            <h4>Architecture technique</h4>
+                            <ul>
+                                <li>Développé en C++ avec l'API Windows</li>
+                                <li>Utilisation de CreateFile et SetFileTime pour la gestion des horodatages</li>
+                                <li>ShellExecute pour l'ouverture des fichiers</li>
+                            </ul>
+                            
+                            <div class="project-links">
+                                <a href="https://github.com/Arthur-91140/Touch-on-Windows" class="btn secondary" target="_blank"><i class="fab fa-github"></i> Voir sur GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Arthur Pruvost Rivière</h3>
+                    <p>Étudiant en BUT Informatique</p>
+                    <p>IUT d'Orsay - Université Paris-Saclay</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:arthurpruvost91140@gmail.com">arthurpruvost91140@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> 07 77 23 31 91</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 17, avenue Georges Pompidou, 91140 Villebon-sur-Yvette</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Liens Rapides</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="projects.html">Projets</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Arthur Pruvost Rivière. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
