@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Arthur Pruvost Rivière</title>
+    <meta name="description" content="Contactez Arthur Pruvost Rivière pour toute opportunité, collaboration ou question concernant ses projets informatiques.">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact-enhancements.css">
+    <link rel="stylesheet" href="css/advanced-animations.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="container">
-            <h1>Arthur Pruvost Rivière</h1>
-            <p>Étudiant en Informatique</p>
+            <div class="header-brand">
+                <h1>Arthur Pruvost Rivière</h1>
+                <p>Étudiant en Informatique</p>
+            </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
@@ -25,85 +32,317 @@
     <main>
         <section class="page-header">
             <div class="container">
-                <h2>Contact</h2>
-                <p>N'hésitez pas à me contacter pour toute opportunité ou question</p>
+                <h2>Contactez-moi</h2>
+                <p>N'hésitez pas à me contacter pour toute opportunité, collaboration ou question concernant mes projets</p>
             </div>
         </section>
 
-        <section class="contact-section">
+        <section class="section contact-section animate-on-scroll">
             <div class="container">
                 <div class="contact-grid">
+                    <!-- Informations de contact -->
                     <div class="contact-info">
+                        <div class="contact-intro">
+                            <h3>Restons connectés</h3>
+                            <p>Je suis toujours ouvert aux nouvelles opportunités, aux collaborations intéressantes et aux discussions techniques. N'hésitez pas à me contacter !</p>
+                        </div>
+
                         <div class="contact-item">
                             <div class="contact-icon">
                                 <i class="fas fa-envelope"></i>
                             </div>
                             <div class="contact-details">
-                                <h3>Email</h3>
+                                <h4>Email</h4>
                                 <p><a href="mailto:arthurpruvost91140@gmail.com">arthurpruvost91140@gmail.com</a></p>
+                                <small>Réponse généralement sous 24h</small>
                             </div>
                         </div>
+
                         <div class="contact-item">
                             <div class="contact-icon">
                                 <i class="fas fa-phone"></i>
                             </div>
                             <div class="contact-details">
-                                <h3>Téléphone</h3>
-                                <p>07 77 23 31 91</p>
+                                <h4>Téléphone</h4>
+                                <p><a href="tel:+33777233191">07 77 23 31 91</a></p>
+                                <small>Disponible en semaine 9h-18h</small>
                             </div>
                         </div>
+
                         <div class="contact-item">
                             <div class="contact-icon">
                                 <i class="fas fa-map-marker-alt"></i>
                             </div>
                             <div class="contact-details">
-                                <h3>Adresse</h3>
+                                <h4>Localisation</h4>
                                 <p>17, avenue Georges Pompidou<br>91140 Villebon-sur-Yvette<br>France</p>
+                                <small>Région parisienne - Île-de-France</small>
                             </div>
                         </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>GitHub</h4>
+                                <p><a href="https://github.com/Arthur-91140" target="_blank">github.com/Arthur-91140</a></p>
+                                <small>Mes projets open source</small>
+                            </div>
+                        </div>
+
                         <div class="contact-item">
                             <div class="contact-icon">
                                 <i class="fas fa-globe"></i>
                             </div>
                             <div class="contact-details">
-                                <h3>Site Web</h3>
-                                <p><a href="https://arthur.pruvost-riviere.fr/portfolio" target="_blank">arthur.pruvost-riviere.fr/portfolio</a></p>
-                                <p><a href="https://github.com/Arthur-91140">github.com/Arthur-91140</a></p>
+                                <h4>Portfolio</h4>
+                                <p><a href="https://arthur.pruvost-riviere.fr/portfolio" target="_blank">arthur.pruvost-riviere.fr</a></p>
+                                <small>Site web principal</small>
+                            </div>
+                        </div>
+
+                        <!-- Réseaux sociaux -->
+                        <div class="social-links">
+                            <h4>Suivez-moi</h4>
+                            <div class="social-buttons">
+                                <a href="https://github.com/Arthur-91140" target="_blank" class="social-btn github">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="mailto:arthurpruvost91140@gmail.com" class="social-btn email">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                                <a href="tel:+33777233191" class="social-btn phone">
+                                    <i class="fas fa-phone"></i>
+                                </a>
+                                <a href="https://www.universite-paris-saclay.fr/" target="_blank" class="social-btn university">
+                                    <i class="fas fa-university"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Formulaire de contact -->
                     <div class="contact-form-container">
-                        <h3>Envoyez-moi un message</h3>
-                        <form id="contact-form" class="contact-form">
-                            <div class="form-group">
-                                <label for="name">Nom</label>
-                                <input type="text" id="name" name="name" required>
+                        <div class="form-header">
+                            <h3>
+                                <i class="fas fa-paper-plane"></i>
+                                Envoyez-moi un message
+                            </h3>
+                            <p>Utilisez ce formulaire pour me contacter directement. Je vous répondrai dans les plus brefs délais.</p>
+                        </div>
+
+                        <form id="contact-form" class="contact-form" novalidate>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">
+                                        <i class="fas fa-user"></i>
+                                        Nom complet
+                                    </label>
+                                    <input type="text" id="name" name="name" required>
+                                    <span class="form-error"></span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">
+                                        <i class="fas fa-envelope"></i>
+                                        Adresse email
+                                    </label>
+                                    <input type="email" id="email" name="email" required>
+                                    <span class="form-error"></span>
+                                </div>
                             </div>
+
                             <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" required>
+                                <label for="subject">
+                                    <i class="fas fa-tag"></i>
+                                    Sujet
+                                </label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Sélectionnez un sujet</option>
+                                    <option value="stage">Opportunité de stage</option>
+                                    <option value="projet">Collaboration sur un projet</option>
+                                    <option value="emploi">Opportunité d'emploi</option>
+                                    <option value="question">Question technique</option>
+                                    <option value="conseil">Demande de conseil</option>
+                                    <option value="autre">Autre</option>
+                                </select>
+                                <span class="form-error"></span>
                             </div>
+
                             <div class="form-group">
-                                <label for="subject">Sujet</label>
-                                <input type="text" id="subject" name="subject" required>
+                                <label for="company">
+                                    <i class="fas fa-building"></i>
+                                    Entreprise/Organisation (optionnel)
+                                </label>
+                                <input type="text" id="company" name="company">
                             </div>
+
                             <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" rows="6" required></textarea>
+                                <label for="message">
+                                    <i class="fas fa-comment-alt"></i>
+                                    Message
+                                </label>
+                                <textarea id="message" name="message" rows="6" required placeholder="Décrivez votre demande, projet ou question..."></textarea>
+                                <span class="form-error"></span>
+                                <div class="character-count">
+                                    <span id="char-count">0</span> / 1000 caractères
+                                </div>
                             </div>
-                            <button type="submit" class="btn primary">Envoyer le message</button>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span class="checkmark"></span>
+                                    <span class="checkbox-text">
+                                        Je souhaite être informé(e) de vos nouveaux projets et actualités
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="privacy" name="privacy" required>
+                                    <span class="checkmark"></span>
+                                    <span class="checkbox-text">
+                                        J'accepte que mes données soient utilisées pour répondre à ma demande *
+                                    </span>
+                                </label>
+                                <span class="form-error"></span>
+                            </div>
+
+                            <button type="submit" class="btn primary submit-btn">
+                                <i class="fas fa-paper-plane"></i>
+                                <span class="btn-text">Envoyer le message</span>
+                                <span class="btn-loading" style="display: none;">
+                                    <i class="fas fa-spinner fa-spin"></i>
+                                    Envoi en cours...
+                                </span>
+                            </button>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="availability">
+        <!-- Section disponibilité -->
+        <section class="availability animate-on-scroll">
             <div class="container">
-                <h2>Disponibilité</h2>
-                <div class="availability-info">
-                    <p>Je suis disponible pour des opportunités de stage ou des projets ponctuels à partir de <strong>juin 2025</strong>.</p>
-                    <p>N'hésitez pas à me contacter pour discuter de vos besoins ou pour toute question concernant mes projets.</p>
+                <div class="availability-content">
+                    <div class="availability-header">
+                        <h2>
+                            <i class="fas fa-calendar-check"></i>
+                            Ma Disponibilité
+                        </h2>
+                    </div>
+                    
+                    <div class="availability-grid">
+                        <div class="availability-item">
+                            <div class="availability-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="availability-details">
+                                <h3>Stages & Missions</h3>
+                                <p>Je suis disponible pour des <strong>stages de développement</strong> et des <strong>missions ponctuelles</strong> à partir de <strong>juin 2025</strong>.</p>
+                                <ul>
+                                    <li>Développement web full-stack</li>
+                                    <li>Programmation système (C/C++)</li>
+                                    <li>Projets innovants et R&D</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="availability-item">
+                            <div class="availability-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="availability-details">
+                                <h3>Collaborations</h3>
+                                <p>Ouvert aux <strong>collaborations</strong> sur des projets open source et aux <strong>mentorats</strong> pour partager mes connaissances.</p>
+                                <ul>
+                                    <li>Projets open source</li>
+                                    <li>Hackathons et concours</li>
+                                    <li>Contributions communautaires</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="availability-item">
+                            <div class="availability-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="availability-details">
+                                <h3>Temps de Réponse</h3>
+                                <p>Je m'engage à répondre à tous les messages dans les <strong>24 heures</strong> maximum, souvent plus rapidement.</p>
+                                <ul>
+                                    <li>Email : < 24h</li>
+                                    <li>Téléphone : immédiat (9h-18h)</li>
+                                    <li>Projets urgents : priorité absolue</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cta-section">
+                        <h3>Prêt à collaborer ?</h3>
+                        <p>N'hésitez pas à me contacter pour discuter de vos besoins ou pour toute question concernant mes projets et compétences.</p>
+                        <a href="#contact-form" class="btn primary scroll-to">
+                            <i class="fas fa-rocket"></i>
+                            Démarrons un projet ensemble
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section FAQ -->
+        <section class="faq-section animate-on-scroll">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Questions Fréquentes</h2>
+                    <p>Trouvez rapidement les réponses aux questions les plus courantes</p>
+                </div>
+
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Quel type de stage recherchez-vous ?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Je recherche principalement des stages en développement logiciel, que ce soit du développement web full-stack, de la programmation système en C/C++, ou des projets innovants impliquant de nouvelles technologies. Je suis particulièrement intéressé par les environnements qui favorisent l'apprentissage et l'innovation.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Quelles sont vos technologies de prédilection ?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Mes langages principaux sont C/C++, Java, JavaScript, HTML/CSS et SQL. J'ai également de l'expérience avec les API REST, Git, et je suis toujours motivé pour apprendre de nouvelles technologies selon les besoins du projet.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Êtes-vous disponible pour du travail à distance ?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolument ! Je suis parfaitement équipé pour le travail à distance et j'ai déjà collaboré sur plusieurs projets en mode distribué. Je maîtrise les outils de collaboration moderne (Git, Slack, Teams, etc.) et je m'adapte facilement aux différents fuseaux horaires.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Proposez-vous des prestations freelance ?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>En tant qu'étudiant, je peux effectuer des missions ponctuelles et des projets de développement en parallèle de mes études, particulièrement pendant les vacances scolaires et les week-ends. N'hésitez pas à me contacter pour discuter de votre projet.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -112,26 +351,157 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-info">
+                <div class="footer-section footer-info">
                     <h3>Arthur Pruvost Rivière</h3>
                     <p>Étudiant en BUT Informatique</p>
                     <p>IUT d'Orsay - Université Paris-Saclay</p>
+                    <p>Développeur passionné et innovateur en herbe</p>
                 </div>
-                <div class="footer-contact">
-                    <h3>Contact</h3>
-                    <p><i class="fas fa-envelope"></i> <a href="mailto:arthurpruvost91140@gmail.com">arthurpruvost91140@gmail.com</a></p>
-                    <p><i class="fas fa-phone"></i> 07 77 23 31 91</p>
-                    <p><i class="fas fa-map-marker-alt"></i> 17, avenue Georges Pompidou, 91140 Villebon-sur-Yvette</p>
+                <div class="footer-section footer-contact">
+                    <h3>Contact Rapide</h3>
+                    <p>
+                        <i class="fas fa-envelope"></i> 
+                        <a href="mailto:arthurpruvost91140@gmail.com">arthurpruvost91140@gmail.com</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-phone"></i> 
+                        <a href="tel:+33777233191">07 77 23 31 91</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i> 
+                        91140 Villebon-sur-Yvette, France
+                    </p>
+                    <p>
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/Arthur-91140" target="_blank">Profil GitHub</a>
+                    </p>
                 </div>
-                <div class="footer-links">
-                    <h3>Liens Rapides</h3>
+                <div class="footer-section footer-links">
+                    <h3>Navigation</h3>
                     <ul>
                         <li><a href="index.html">Accueil</a></li>
-                        <li><a href="projects.html">Projets</a></li>
+                        <li><a href="projects.html">Mes Projets</a></li>
                         <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <h3 style="margin-top: var(--space-lg);">Liens Utiles</h3>
+                    <ul>
+                        <li><a href="#availability">Disponibilité</a></li>
+                        <li><a href="#contact-form">Formulaire</a></li>
+                        <li><a href="#faq">FAQ</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Arthur Pruvost Rivière. Tous droits réservés.</p>
+                <p>&copy; 2025 Arthur Pruvost Rivière. Tous droits réservés. Développé avec passion et innovation 💻</p>
             </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact-enhancements.js"></script>
+    <script src="js/advanced-animations.js"></script>
+    
+    <!-- Script spécifique à la page contact -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Gestion des FAQ
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                const icon = question.querySelector('i');
+                
+                question.addEventListener('click', () => {
+                    const isOpen = item.classList.contains('active');
+                    
+                    // Fermer tous les autres items
+                    faqItems.forEach(otherItem => {
+                        otherItem.classList.remove('active');
+                        otherItem.querySelector('i').style.transform = 'rotate(0deg)';
+                    });
+                    
+                    // Basculer l'item actuel
+                    if (!isOpen) {
+                        item.classList.add('active');
+                        icon.style.transform = 'rotate(180deg)';
+                    }
+                });
+            });
+            
+            // Compteur de caractères pour le textarea
+            const messageTextarea = document.getElementById('message');
+            const charCount = document.getElementById('char-count');
+            
+            if (messageTextarea && charCount) {
+                messageTextarea.addEventListener('input', () => {
+                    const count = messageTextarea.value.length;
+                    charCount.textContent = count;
+                    
+                    if (count > 1000) {
+                        charCount.style.color = '#f56565';
+                    } else if (count > 800) {
+                        charCount.style.color = '#ed8936';
+                    } else {
+                        charCount.style.color = '#718096';
+                    }
+                });
+            }
+            
+            // Validation du formulaire en temps réel
+            const form = document.getElementById('contact-form');
+            const inputs = form.querySelectorAll('input, textarea, select');
+            
+            inputs.forEach(input => {
+                input.addEventListener('blur', () => validateField(input));
+                input.addEventListener('input', () => clearError(input));
+            });
+            
+            function validateField(field) {
+                const errorSpan = field.parentElement.querySelector('.form-error');
+                let isValid = true;
+                let errorMessage = '';
+                
+                if (field.hasAttribute('required') && !field.value.trim()) {
+                    isValid = false;
+                    errorMessage = 'Ce champ est obligatoire';
+                } else if (field.type === 'email' && field.value) {
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test(field.value)) {
+                        isValid = false;
+                        errorMessage = 'Adresse email invalide';
+                    }
+                }
+                
+                if (errorSpan) {
+                    errorSpan.textContent = errorMessage;
+                    field.parentElement.classList.toggle('error', !isValid);
+                }
+                
+                return isValid;
+            }
+            
+            function clearError(field) {
+                const errorSpan = field.parentElement.querySelector('.form-error');
+                if (errorSpan) {
+                    errorSpan.textContent = '';
+                    field.parentElement.classList.remove('error');
+                }
+            }
+            
+            // Smooth scroll pour les liens internes
+            document.querySelectorAll('a[href^="#"]').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const target = document.querySelector(link.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
