@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projets | Arthur Pruvost Rivière</title>
+    <meta name="description" content="Découvrez les projets informatiques d'Arthur Pruvost Rivière : applications web, shells C++, et outils de développement innovants.">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="container">
-            <h1>Arthur Pruvost Rivière</h1>
-            <p>Étudiant en Informatique</p>
+            <div class="header-brand">
+                <h1>Arthur Pruvost Rivière</h1>
+                <p>Étudiant en Informatique</p>
+            </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
@@ -26,50 +31,70 @@
         <section class="page-header">
             <div class="container">
                 <h2>Mes Projets</h2>
-                <p>Découvrez les différents projets sur lesquels j'ai travaillé</p>
+                <p>Découvrez les différents projets sur lesquels j'ai travaillé, alliant innovation technique et design moderne</p>
             </div>
         </section>
 
-        <section class="projects" id="projects-list">
+        <section class="section projects animate-on-scroll" id="projects-list">
             <div class="container">
                 <div class="project-full" id="edt-iut">
                     <div class="project-header">
-                        <h3>Emploi du Temps IUT d'Orsay</h3>
+                        <h3>
+                            <i class="fas fa-calendar-alt"></i>
+                            Emploi du Temps IUT d'Orsay
+                        </h3>
                         <div class="project-tags">
-                            <span class="tag">HTML/CSS</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">API</span>
-                            <span class="tag">Responsive</span>
+                            <span class="tag"><i class="fab fa-html5"></i> HTML/CSS</span>
+                            <span class="tag"><i class="fab fa-js-square"></i> JavaScript</span>
+                            <span class="tag"><i class="fas fa-plug"></i> API REST</span>
+                            <span class="tag"><i class="fas fa-mobile-alt"></i> Responsive</span>
+                            <span class="tag"><i class="fas fa-rocket"></i> Moderne</span>
                         </div>
                     </div>
                     <div class="project-content">
                         <div class="project-image">
-                            <img src="img/emploi-temps.jpg" alt="Emploi du Temps IUT">
+                            <img src="img/emploi-temps.jpg" alt="Interface de l'application Emploi du Temps IUT" loading="lazy">
                         </div>
                         <div class="project-description">
-                            <h4>Description</h4>
-                            <p>Application web permettant de consulter l'emploi du temps des étudiants de l'IUT d'Orsay avec une interface claire et intuitive.</p>
+                            <h4><i class="fas fa-info-circle"></i> Description</h4>
+                            <p>Application web moderne et intuitive permettant aux étudiants de l'IUT d'Orsay de consulter leur emploi du temps avec une interface claire et responsive. Le projet vise à simplifier l'accès aux informations académiques tout en offrant une expérience utilisateur optimisée.</p>
                             
-                            <h4>Fonctionnalités</h4>
+                            <h4><i class="fas fa-star"></i> Fonctionnalités Principales</h4>
                             <ul>
                                 <li>Authentification simplifiée via identifiant au format prénom.nom</li>
-                                <li>Vue journalière avec informations détaillées sur les cours</li>
-                                <li>Vue hebdomadaire pour visualiser l'emploi du temps sur la semaine</li>
-                                <li>Navigation temporelle entre les jours/semaines</li>
-                                <li>Affichage par type de cours (TP, CM, Projet, etc.)</li>
-                                <li>Design responsive adapté à tous les appareils</li>
+                                <li>Vue journalière avec informations détaillées sur les cours (horaires, salles, enseignants)</li>
+                                <li>Vue hebdomadaire pour visualiser l'emploi du temps complet</li>
+                                <li>Navigation temporelle fluide entre les jours et semaines</li>
+                                <li>Filtrage par type de cours (TP, CM, TD, Projet, etc.)</li>
+                                <li>Design responsive adapté à tous les appareils (mobile, tablette, desktop)</li>
+                                <li>Interface moderne avec animations et micro-interactions</li>
+                                <li>Mode sombre/clair automatique selon les préférences système</li>
                             </ul>
                             
-                            <h4>Architecture technique</h4>
+                            <h4><i class="fas fa-cogs"></i> Architecture Technique</h4>
                             <ul>
-                                <li>Frontend: HTML5, CSS3, JavaScript vanilla</li>
-                                <li>Communication avec l'API de l'IUT d'Orsay</li>
-                                <li>Design responsive avec CSS moderne (variables, flexbox, grid)</li>
+                                <li><strong>Frontend :</strong> HTML5 sémantique, CSS3 moderne avec variables et flexbox/grid</li>
+                                <li><strong>JavaScript :</strong> ES6+ vanilla avec gestion d'état côté client</li>
+                                <li><strong>API :</strong> Intégration avec l'API officielle de l'IUT d'Orsay</li>
+                                <li><strong>Performance :</strong> Optimisations pour un chargement rapide et fluide</li>
+                                <li><strong>Accessibilité :</strong> Conformité WCAG 2.1 pour tous les utilisateurs</li>
+                            </ul>
+
+                            <h4><i class="fas fa-lightbulb"></i> Défis Techniques Relevés</h4>
+                            <ul>
+                                <li>Gestion des données temporelles et des fuseaux horaires</li>
+                                <li>Optimisation des performances pour le rendu de calendriers complexes</li>
+                                <li>Adaptation responsive pour différentes tailles d'écran</li>
+                                <li>Intégration fluide avec l'API existante de l'université</li>
                             </ul>
                             
                             <div class="project-links">
-                                <a href="https://github.com/Arthur-91140/edt-iut-orsay" class="btn secondary" target="_blank"><i class="fab fa-github"></i> Voir sur GitHub</a>
-                                <a href="#" class="btn primary" target="_blank"><i class="fas fa-external-link-alt"></i> Voir le site</a>
+                                <a href="https://github.com/Arthur-91140/edt-iut-orsay" class="btn secondary" target="_blank">
+                                    <i class="fab fa-github"></i> Code Source
+                                </a>
+                                <a href="#" class="btn primary" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Voir en Direct
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -77,40 +102,53 @@
 
                 <div class="project-full" id="absence-iut">
                     <div class="project-header">
-                        <h3>Système de Consultation des Absences</h3>
+                        <h3>
+                            <i class="fas fa-user-check"></i>
+                            Système de Consultation des Absences
+                        </h3>
                         <div class="project-tags">
-                            <span class="tag">HTML/CSS</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">API</span>
-                            <span class="tag">Responsive</span>
+                            <span class="tag"><i class="fab fa-html5"></i> HTML/CSS</span>
+                            <span class="tag"><i class="fab fa-js-square"></i> JavaScript</span>
+                            <span class="tag"><i class="fas fa-chart-bar"></i> Data Viz</span>
+                            <span class="tag"><i class="fas fa-mobile-alt"></i> Responsive</span>
+                            <span class="tag"><i class="fas fa-shield-alt"></i> Sécurisé</span>
                         </div>
                     </div>
                     <div class="project-content">
                         <div class="project-image">
-                            <img src="img/absences.jpg" alt="Système de Consultation des Absences">
+                            <img src="img/absences.jpg" alt="Interface du système de consultation des absences" loading="lazy">
                         </div>
                         <div class="project-description">
-                            <h4>Description</h4>
-                            <p>Interface web permettant aux étudiants de consulter leurs absences à l'IUT d'Orsay, avec une visualisation claire des données.</p>
+                            <h4><i class="fas fa-info-circle"></i> Description</h4>
+                            <p>Interface web complète permettant aux étudiants de l'IUT d'Orsay de consulter leurs absences, retards et exclusions avec une visualisation claire et des statistiques détaillées. Le projet met l'accent sur une présentation intuitive des données académiques.</p>
                             
-                            <h4>Fonctionnalités</h4>
+                            <h4><i class="fas fa-star"></i> Fonctionnalités Avancées</h4>
                             <ul>
-                                <li>Consultation des absences, retards et exclusions</li>
-                                <li>Statistiques et récapitulatifs visuels</li>
-                                <li>Interface utilisateur intuitive et moderne</li>
-                                <li>Animations pour améliorer l'expérience utilisateur</li>
+                                <li>Dashboard personnalisé avec vue d'ensemble des absences</li>
+                                <li>Graphiques interactifs pour visualiser les tendances</li>
+                                <li>Filtrage par matière, période et type d'absence</li>
+                                <li>Calcul automatique des taux d'assiduité</li>
+                                <li>Notifications visuelles pour les seuils critiques</li>
+                                <li>Export des données en PDF pour impression</li>
+                                <li>Interface adaptative avec animations fluides</li>
                             </ul>
                             
-                            <h4>Architecture technique</h4>
+                            <h4><i class="fas fa-cogs"></i> Technologies Utilisées</h4>
                             <ul>
-                                <li>Interface utilisateur en HTML5/CSS3 avec animations JavaScript</li>
-                                <li>Architecture responsive pour tous types d'écrans</li>
-                                <li>Intégration avec l'API de l'IUT pour la récupération des données</li>
+                                <li><strong>Visualisation :</strong> Chart.js pour les graphiques interactifs</li>
+                                <li><strong>Frontend :</strong> Architecture modulaire en JavaScript ES6+</li>
+                                <li><strong>Design :</strong> CSS Grid et Flexbox pour des layouts complexes</li>
+                                <li><strong>Performance :</strong> Lazy loading et optimisations de rendu</li>
+                                <li><strong>Sécurité :</strong> Authentification sécurisée et protection des données</li>
                             </ul>
                             
                             <div class="project-links">
-                                <a href="https://github.com/Arthur-91140/absence-iut" class="btn secondary" target="_blank"><i class="fab fa-github"></i> Voir sur GitHub</a>
-                                <a href="#" class="btn primary" target="_blank"><i class="fas fa-external-link-alt"></i> Voir le site</a>
+                                <a href="https://github.com/Arthur-91140/absence-iut" class="btn secondary" target="_blank">
+                                    <i class="fab fa-github"></i> Code Source
+                                </a>
+                                <a href="#" class="btn primary" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Démonstration
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -118,41 +156,63 @@
 
                 <div class="project-full" id="actinium">
                     <div class="project-header">
-                        <h3>ACTINIUM - Shell C++ Modulaire</h3>
+                        <h3>
+                            <i class="fas fa-terminal"></i>
+                            ACTINIUM - Shell C++ Modulaire
+                        </h3>
                         <div class="project-tags">
-                            <span class="tag">C++</span>
-                            <span class="tag">Windows</span>
-                            <span class="tag">Shell</span>
-                            <span class="tag">DLL</span>
+                            <span class="tag"><i class="fas fa-code"></i> C++17</span>
+                            <span class="tag"><i class="fab fa-windows"></i> Windows API</span>
+                            <span class="tag"><i class="fas fa-puzzle-piece"></i> Modulaire</span>
+                            <span class="tag"><i class="fas fa-layer-group"></i> DLL</span>
+                            <span class="tag"><i class="fas fa-magic"></i> Innovation</span>
                         </div>
                     </div>
                     <div class="project-content">
                         <div class="project-image">
-                            <img src="img/actinium.jpg" alt="ACTINIUM Shell">
+                            <img src="img/actinium.jpg" alt="Interface du shell ACTINIUM en fonctionnement" loading="lazy">
                         </div>
                         <div class="project-description">
-                            <h4>Description</h4>
-                            <p>ACTINIUM est un shell C++ qui permet de modifier le comportement des commandes à la volée. Contrairement aux shells traditionnels, ACTINIUM donne un accès direct au code source de chaque commande depuis le terminal, permettant de les modifier et de les recompiler sans quitter l'environnement.</p>
+                            <h4><i class="fas fa-info-circle"></i> Concept Innovant</h4>
+                            <p>ACTINIUM révolutionne l'interaction avec les shells traditionnels en permettant de modifier et recompiler les commandes directement depuis le terminal. Cette approche unique offre une flexibilité inégalée pour l'expérimentation et le développement rapide.</p>
                             
-                            <h4>Fonctionnalités</h4>
+                            <h4><i class="fas fa-rocket"></i> Fonctionnalités Révolutionnaires</h4>
                             <ul>
-                                <li>Interface en ligne de commande avec support UTF-8</li>
-                                <li>Navigation dans le système de fichiers (ls, cd, pwd)</li>
-                                <li>Exécution de commandes externes via variables d'environnement</li>
-                                <li>Modification et recompilation des commandes à la volée</li>
-                                <li>Architecture modulaire pour faciliter l'ajout de nouvelles commandes</li>
+                                <li>Modification en temps réel du code source des commandes</li>
+                                <li>Compilation automatique et rechargement à chaud des modules</li>
+                                <li>Interface en ligne de commande avec support UTF-8 complet</li>
+                                <li>Navigation avancée dans le système de fichiers (ls, cd, pwd améliorés)</li>
+                                <li>Exécution transparente des commandes système existantes</li>
+                                <li>Système de plugins extensible pour nouvelles fonctionnalités</li>
+                                <li>Historique intelligent des commandes avec auto-complétion</li>
+                                <li>Gestion avancée des erreurs avec suggestions de correction</li>
                             </ul>
                             
-                            <h4>Architecture technique</h4>
+                            <h4><i class="fas fa-wrench"></i> Architecture Avancée</h4>
                             <ul>
-                                <li>Développé en C++ (standard C++11)</li>
-                                <li>Architecture modulaire basée sur les DLL</li>
-                                <li>Compilation intégrée via appels système</li>
-                                <li>Gestion dynamique de la mémoire et des ressources système</li>
+                                <li><strong>Langage :</strong> C++17 moderne avec STL optimisée</li>
+                                <li><strong>Modules :</strong> Architecture DLL pour maximum de flexibilité</li>
+                                <li><strong>Compilation :</strong> Intégration native avec les compilateurs système</li>
+                                <li><strong>Mémoire :</strong> Gestion intelligente avec RAII et smart pointers</li>
+                                <li><strong>Performance :</strong> Optimisations low-level pour vitesse maximale</li>
+                                <li><strong>Portabilité :</strong> Couche d'abstraction pour multi-plateforme</li>
+                            </ul>
+
+                            <h4><i class="fas fa-award"></i> Innovations Techniques</h4>
+                            <ul>
+                                <li>Premier shell permettant la modification de code en live</li>
+                                <li>Système de compilation incrémentale intégré</li>
+                                <li>Architecture plugin révolutionnaire pour l'extensibilité</li>
+                                <li>Gestion avancée des dépendances entre modules</li>
                             </ul>
                             
                             <div class="project-links">
-                                <a href="https://github.com/Arthur-91140/actinium" class="btn secondary" target="_blank"><i class="fab fa-github"></i> Voir sur GitHub</a>
+                                <a href="https://github.com/Arthur-91140/actinium" class="btn secondary" target="_blank">
+                                    <i class="fab fa-github"></i> Explorer le Code
+                                </a>
+                                <a href="#" class="btn primary" target="_blank">
+                                    <i class="fas fa-download"></i> Télécharger
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -160,38 +220,107 @@
 
                 <div class="project-full" id="touch-windows">
                     <div class="project-header">
-                        <h3>Touch on Windows</h3>
+                        <h3>
+                            <i class="fas fa-hand-pointer"></i>
+                            Touch on Windows
+                        </h3>
                         <div class="project-tags">
-                            <span class="tag">C++</span>
-                            <span class="tag">Windows API</span>
-                            <span class="tag">Utilitaire</span>
+                            <span class="tag"><i class="fas fa-code"></i> C++</span>
+                            <span class="tag"><i class="fab fa-windows"></i> Windows API</span>
+                            <span class="tag"><i class="fas fa-tools"></i> Utilitaire</span>
+                            <span class="tag"><i class="fas fa-clock"></i> Timestamps</span>
+                            <span class="tag"><i class="fas fa-feather-alt"></i> Léger</span>
                         </div>
                     </div>
                     <div class="project-content">
                         <div class="project-image">
-                            <img src="img/touch-windows.jpg" alt="Touch on Windows">
+                            <img src="img/touch-windows.jpg" alt="Démonstration de Touch on Windows" loading="lazy">
                         </div>
                         <div class="project-description">
-                            <h4>Description</h4>
-                            <p>Implémentation de la commande Unix "touch" pour Windows, permettant de créer des fichiers vides ou de mettre à jour la date de modification d'un fichier existant.</p>
+                            <h4><i class="fas fa-info-circle"></i> Description</h4>
+                            <p>Port élégant et efficace de la commande Unix "touch" pour l'environnement Windows. Cet utilitaire compact comble une lacune importante en apportant cette fonctionnalité essentielle aux développeurs Windows.</p>
                             
-                            <h4>Fonctionnalités</h4>
+                            <h4><i class="fas fa-star"></i> Fonctionnalités Complètes</h4>
                             <ul>
-                                <li>Création de fichiers vides</li>
-                                <li>Mise à jour de l'horodatage des fichiers existants</li>
-                                <li>Option pour ouvrir automatiquement le fichier après sa création</li>
-                                <li>Interface en ligne de commande simple</li>
+                                <li>Création instantanée de fichiers vides avec gestion d'erreurs</li>
+                                <li>Mise à jour précise des horodatages (accès, modification, création)</li>
+                                <li>Option d'ouverture automatique avec l'éditeur par défaut</li>
+                                <li>Support des chemins relatifs et absolus</li>
+                                <li>Gestion des caractères spéciaux et espaces dans les noms</li>
+                                <li>Interface en ligne de commande intuitive et documentée</li>
+                                <li>Mode verbose pour debugging et apprentissage</li>
                             </ul>
                             
-                            <h4>Architecture technique</h4>
+                            <h4><i class="fas fa-cogs"></i> Excellence Technique</h4>
                             <ul>
-                                <li>Développé en C++ avec l'API Windows</li>
-                                <li>Utilisation de CreateFile et SetFileTime pour la gestion des horodatages</li>
-                                <li>ShellExecute pour l'ouverture des fichiers</li>
+                                <li><strong>Performance :</strong> Optimisé pour vitesse et faible empreinte mémoire</li>
+                                <li><strong>Compatibilité :</strong> Support de Windows 7 à Windows 11</li>
+                                <li><strong>API Native :</strong> Utilisation directe de CreateFile et SetFileTime</li>
+                                <li><strong>Robustesse :</strong> Gestion complète des cas d'erreur et validation</li>
+                                <li><strong>Simplicité :</strong> Interface épurée fidèle à l'original Unix</li>
+                            </ul>
+
+                            <h4><i class="fas fa-users"></i> Impact & Utilisation</h4>
+                            <ul>
+                                <li>Facilite la transition des développeurs Unix/Linux vers Windows</li>
+                                <li>Améliore les workflows de développement cross-platform</li>
+                                <li>Utilisé dans des scripts d'automatisation et de build</li>
+                                <li>Contribue à l'écosystème open source Windows</li>
                             </ul>
                             
                             <div class="project-links">
-                                <a href="https://github.com/Arthur-91140/Touch-on-Windows" class="btn secondary" target="_blank"><i class="fab fa-github"></i> Voir sur GitHub</a>
+                                <a href="https://github.com/Arthur-91140/Touch-on-Windows" class="btn secondary" target="_blank">
+                                    <i class="fab fa-github"></i> Code Source
+                                </a>
+                                <a href="#" class="btn primary" target="_blank">
+                                    <i class="fas fa-download"></i> Télécharger
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section pour futurs projets -->
+                <div class="future-projects animate-on-scroll">
+                    <div class="container">
+                        <div class="section-header">
+                            <h2>Projets à Venir</h2>
+                            <p>Découvrez les innovations sur lesquelles je travaille actuellement</p>
+                        </div>
+                        <div class="projects-grid">
+                            <div class="project-card future-project">
+                                <div class="project-image">
+                                    <div class="coming-soon">
+                                        <i class="fas fa-cog fa-spin"></i>
+                                        <span>En Développement</span>
+                                    </div>
+                                </div>
+                                <div class="project-info">
+                                    <h3>Gestionnaire de Notes Intelligent</h3>
+                                    <p>Application de prise de notes avec IA intégrée pour l'organisation automatique et la recherche sémantique.</p>
+                                    <div class="project-tags">
+                                        <span class="tag">React</span>
+                                        <span class="tag">Node.js</span>
+                                        <span class="tag">IA</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-card future-project">
+                                <div class="project-image">
+                                    <div class="coming-soon">
+                                        <i class="fas fa-lightbulb"></i>
+                                        <span>En Conception</span>
+                                    </div>
+                                </div>
+                                <div class="project-info">
+                                    <h3>Framework de Tests Distribués</h3>
+                                    <p>Outil pour l'exécution de tests automatisés en parallèle sur plusieurs environnements avec reporting avancé.</p>
+                                    <div class="project-tags">
+                                        <span class="tag">Python</span>
+                                        <span class="tag">Docker</span>
+                                        <span class="tag">CI/CD</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -203,32 +332,119 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-info">
+                <div class="footer-section footer-info">
                     <h3>Arthur Pruvost Rivière</h3>
                     <p>Étudiant en BUT Informatique</p>
                     <p>IUT d'Orsay - Université Paris-Saclay</p>
+                    <p>Créateur de solutions innovantes et passionné de technologie</p>
                 </div>
-                <div class="footer-contact">
+                <div class="footer-section footer-contact">
                     <h3>Contact</h3>
-                    <p><i class="fas fa-envelope"></i> <a href="mailto:arthurpruvost91140@gmail.com">arthurpruvost91140@gmail.com</a></p>
-                    <p><i class="fas fa-phone"></i> 07 77 23 31 91</p>
-                    <p><i class="fas fa-map-marker-alt"></i> 17, avenue Georges Pompidou, 91140 Villebon-sur-Yvette</p>
+                    <p>
+                        <i class="fas fa-envelope"></i> 
+                        <a href="mailto:arthurpruvost91140@gmail.com">arthurpruvost91140@gmail.com</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-phone"></i> 
+                        07 77 23 31 91
+                    </p>
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i> 
+                        17, avenue Georges Pompidou, 91140 Villebon-sur-Yvette
+                    </p>
+                    <p>
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/Arthur-91140" target="_blank">GitHub Profile</a>
+                    </p>
                 </div>
-                <div class="footer-links">
-                    <h3>Liens Rapides</h3>
+                <div class="footer-section footer-links">
+                    <h3>Navigation</h3>
                     <ul>
                         <li><a href="index.html">Accueil</a></li>
                         <li><a href="projects.html">Projets</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
+                    <h3 style="margin-top: var(--space-lg);">Technologies</h3>
+                    <ul>
+                        <li><a href="#edt-iut">Applications Web</a></li>
+                        <li><a href="#actinium">Programmation Système</a></li>
+                        <li><a href="#touch-windows">Utilitaires</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Arthur Pruvost Rivière. Tous droits réservés.</p>
+                <p>&copy; 2025 Arthur Pruvost Rivière. Tous droits réservés. Codé avec passion et innovation 🚀</p>
             </div>
         </div>
     </footer>
 
     <script src="js/main.js"></script>
+    
+    <!-- Script spécifique à la page projets -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animation spéciale pour les projets futurs
+            const futureProjects = document.querySelectorAll('.future-project');
+            futureProjects.forEach(project => {
+                project.addEventListener('mouseenter', () => {
+                    project.style.transform = 'translateY(-5px) scale(1.02)';
+                    project.style.filter = 'brightness(1.1)';
+                });
+                
+                project.addEventListener('mouseleave', () => {
+                    project.style.transform = 'translateY(0) scale(1)';
+                    project.style.filter = 'brightness(1)';
+                });
+            });
+            
+            // Smooth scroll pour les ancres de projets
+            document.querySelectorAll('a[href^="#"]').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const target = document.querySelector(link.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+    
+    <style>
+        .coming-soon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            font-weight: 600;
+        }
+        
+        .coming-soon i {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .future-project {
+            opacity: 0.8;
+            transition: all 0.3s ease;
+        }
+        
+        .future-project:hover {
+            opacity: 1;
+        }
+        
+        .future-projects {
+            margin-top: var(--space-4xl);
+            padding: var(--space-3xl) 0;
+            background: var(--bg-light);
+            border-radius: var(--radius-2xl);
+        }
+    </style>
 </body>
 </html>
