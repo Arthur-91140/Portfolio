@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arthur Pruvost Rivière | Développeur</title>
+    <meta name="description" content="Portfolio d'Arthur Pruvost Rivière, étudiant en BUT Informatique à l'IUT d'Orsay, passionné par le développement de logiciels et la programmation système.">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="container">
-            <h1>Arthur Pruvost Rivière</h1>
-            <p>Étudiant en Informatique</p>
+            <div class="header-brand">
+                <h1>Arthur Pruvost Rivière</h1>
+                <p>Étudiant en Informatique</p>
+            </div>
             <nav>
                 <ul>
                     <li><a href="index.html" class="active">Accueil</a></li>
@@ -27,48 +32,57 @@
             <div class="container">
                 <div class="hero-content">
                     <div class="hero-text">
-                        <h2>Bonjour,</h2>
-                        <p>Étudiant en BUT Informatique à l'IUT d'Orsay, passionné par le développement de logiciels et la programmation système.</p>
+                        <h2>Bonjour, je suis Arthur</h2>
+                        <p>Étudiant en BUT Informatique à l'IUT d'Orsay, passionné par le développement de logiciels et la programmation système. J'aspire à créer des solutions innovantes et à contribuer à l'évolution technologique.</p>
                         <div class="hero-buttons">
-                            <a href="projects.html" class="btn primary">Voir mes projets</a>
-                            <a href="contact.html" class="btn secondary">Me contacter</a>
+                            <a href="projects.html" class="btn primary">
+                                <i class="fas fa-code"></i>
+                                Voir mes projets
+                            </a>
+                            <a href="contact.html" class="btn secondary">
+                                <i class="fas fa-envelope"></i>
+                                Me contacter
+                            </a>
                         </div>
                     </div>
                     <div class="hero-image">
-                        <img src="img/profile.png" alt="Arthur Pruvost Rivière">
+                        <img src="img/profile.png" alt="Arthur Pruvost Rivière" loading="lazy">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="about">
+        <section class="section about animate-on-scroll">
             <div class="container">
-                <h2>À propos de moi</h2>
+                <div class="section-header">
+                    <h2>À propos de moi</h2>
+                    <p>Découvrez mon parcours, mes compétences et ma passion pour l'informatique</p>
+                </div>
                 <div class="about-content">
                     <div class="about-text">
                         <p>Je suis actuellement en première année de BUT Informatique à l'IUT d'Orsay (Université Paris-Saclay). Attiré par la résolution de problèmes complexes, j'ai une affinité particulière pour la programmation système et le développement web.</p>
-                        <p>À travers mes projets personnels et universitaires, j'aspire à développer mes compétences techniques tout en contribuant à des solutions innovantes.</p>
+                        <p>À travers mes projets personnels et universitaires, j'aspire à développer mes compétences techniques tout en contribuant à des solutions innovantes. Mon objectif est de créer des applications qui ont un impact positif sur la vie des utilisateurs.</p>
+                        <p>Curieux et toujours en apprentissage, je cherche constamment à découvrir de nouvelles technologies et à perfectionner mes compétences existantes.</p>
                     </div>
-                    <div class="skills">
-                        <h3>Compétences</h3>
-                        <div class="skill-list">
-                            <div class="skill-category">
-                                <h4>Langages de programmation</h4>
-                                <ul>
-                                    <li>C/C++</li>
-                                    <li>Java</li>
-                                    <li>SQL</li>
-                                    <li>HTML/CSS</li>
-                                    <li>JavaScript</li>
-                                </ul>
+                    <div class="skills-container">
+                        <h3>Mes Compétences</h3>
+                        <div class="skill-category">
+                            <h4>Langages de programmation</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">C/C++</span>
+                                <span class="skill-tag">Java</span>
+                                <span class="skill-tag">SQL</span>
+                                <span class="skill-tag">HTML/CSS</span>
+                                <span class="skill-tag">JavaScript</span>
                             </div>
-                            <div class="skill-category">
-                                <h4>Outils</h4>
-                                <ul>
-                                    <li>Git</li>
-                                    <li>Suite Microsoft Office</li>
-                                    <li>Visual Studio Code</li>
-                                </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Outils & Technologies</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Git</span>
+                                <span class="skill-tag">Visual Studio Code</span>
+                                <span class="skill-tag">Microsoft Office</span>
+                                <span class="skill-tag">API REST</span>
                             </div>
                         </div>
                     </div>
@@ -76,118 +90,149 @@
             </div>
         </section>
 
-        <section class="education">
+        <section class="section education animate-on-scroll">
             <div class="container">
-                <h2>Formation</h2>
+                <div class="section-header">
+                    <h2>Formation</h2>
+                    <p>Mon parcours académique et les étapes clés de mon apprentissage</p>
+                </div>
                 <div class="timeline">
                     <div class="timeline-item">
                         <div class="timeline-date">2024-2025</div>
                         <div class="timeline-content">
                             <h3>BUT Informatique</h3>
-                            <p>Université Paris-Saclay - IUT d'Orsay</p>
-                            <p class="details">Programmation C, C++, Java, SQL, Gestion, Comptabilité, Droit, Anglais.</p>
-                            <p class="details">Membre du bureau des étudiants de l'IUT.</p>
+                            <p class="institution">Université Paris-Saclay - IUT d'Orsay</p>
+                            <div class="details">
+                                <p>Formation complète en informatique incluant la programmation en C, C++, Java, les bases de données SQL, ainsi que la gestion, la comptabilité, le droit et l'anglais.</p>
+                                <p><strong>Engagement :</strong> Membre actif du bureau des étudiants de l'IUT.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-date">2023-2024</div>
                         <div class="timeline-content">
                             <h3>Baccalauréat Général</h3>
-                            <p>Lycée Polyvalent Henri Poincaré</p>
-                            <p class="details">Spécialités : Physique-Chimie et NSI (Numérique et Sciences Informatiques)</p>
-                            <p class="details">Mention Assez Bien</p>
+                            <p class="institution">Lycée Polyvalent Henri Poincaré</p>
+                            <div class="details">
+                                <p><strong>Spécialités :</strong> Physique-Chimie et NSI (Numérique et Sciences Informatiques)</p>
+                                <p><strong>Mention :</strong> Assez Bien</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="experience">
+        <section class="section experience animate-on-scroll">
             <div class="container">
-                <h2>Expériences Professionnelles</h2>
-                <div class="experience-list">
-                    <div class="experience-item">
-                        <div class="experience-date">Été 2024</div>
-                        <div class="experience-content">
+                <div class="section-header">
+                    <h2>Expériences Professionnelles</h2>
+                    <p>Les missions qui ont enrichi mon parcours professionnel</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Été 2024</div>
+                        <div class="timeline-content">
                             <h3>Job d'été - Mairie de Villebon-sur-Yvette</h3>
-                            <ul>
-                                <li>Traitement et analyse des données de fréquentation des cours de tennis pour le centre sportif municipal à l'aide du logiciel Excel.</li>
-                                <li>Réalisation d'une vidéo promotionnelle pour la saison culturelle 2024-2025.</li>
-                            </ul>
+                            <div class="details">
+                                <p>Traitement et analyse des données de fréquentation des cours de tennis pour le centre sportif municipal à l'aide du logiciel Excel. Développement de compétences en analyse de données et création de rapports.</p>
+                                <p>Réalisation d'une vidéo promotionnelle pour la saison culturelle 2024-2025, incluant la conception, le tournage et le montage.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="experience-item">
-                        <div class="experience-date">2023</div>
-                        <div class="experience-content">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2023</div>
+                        <div class="timeline-content">
                             <h3>Stage de 3ème - Faculté des Métiers de l'Essonne</h3>
-                            <ul>
-                                <li>Accompagnement des formateurs du CFA pendant les cours de la formation des apprentis chaudronnier.</li>
-                            </ul>
+                            <div class="details">
+                                <p>Accompagnement des formateurs du CFA pendant les cours de formation des apprentis chaudronnier. Découverte du monde professionnel et des métiers techniques.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="experience-item">
-                        <div class="experience-date">Régulier</div>
-                        <div class="experience-content">
-                            <h3>Pet-Sitter</h3>
-                            <ul>
-                                <li>Garde régulière d'animaux de compagnie pendant les vacances de leurs propriétaires.</li>
-                            </ul>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Régulier</div>
+                        <div class="timeline-content">
+                            <h3>Pet-Sitter Indépendant</h3>
+                            <div class="details">
+                                <p>Garde régulière d'animaux de compagnie pendant les vacances de leurs propriétaires. Développement de compétences en responsabilité, organisation et relation client.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="interests">
+        <section class="section interests animate-on-scroll">
             <div class="container">
-                <h2>Centres d'Intérêt</h2>
-                <div class="interests-list">
+                <div class="section-header">
+                    <h2>Centres d'Intérêt</h2>
+                    <p>Les passions qui m'animent en dehors de l'informatique</p>
+                </div>
+                <div class="interests-grid">
                     <div class="interest-item">
-                        <div class="interest-icon"><i class="fas fa-camera"></i></div>
+                        <div class="interest-icon">
+                            <i class="fas fa-camera"></i>
+                        </div>
                         <h3>Photographie</h3>
-                        <p>Photographe amateur, deuxième place au concours photo de l'Université Paris-Saclay en octobre 2024.</p>
+                        <p>Photographe amateur passionné par la capture de moments uniques. Fier d'avoir obtenu la deuxième place au concours photo de l'Université Paris-Saclay en octobre 2024.</p>
                     </div>
                     <div class="interest-item">
-                        <div class="interest-icon"><i class="fas fa-bicycle"></i></div>
-                        <h3>Sport</h3>
-                        <p>Pratique régulière de la randonnée à vélo dans la vallée de Chevreuse.</p>
+                        <div class="interest-icon">
+                            <i class="fas fa-bicycle"></i>
+                        </div>
+                        <h3>Sport & Nature</h3>
+                        <p>Pratique régulière de la randonnée à vélo dans la magnifique vallée de Chevreuse. Une passion qui me permet de me ressourcer et de découvrir de nouveaux paysages.</p>
                     </div>
                     <div class="interest-item">
-                        <div class="interest-icon"><i class="fas fa-first-aid"></i></div>
+                        <div class="interest-icon">
+                            <i class="fas fa-first-aid"></i>
+                        </div>
                         <h3>Secourisme</h3>
-                        <p>Diplômes PSC1 et Premier Secours en Équipe de niveau 1 (PSE1) obtenus en 2025.</p>
+                        <p>Engagement citoyen avec l'obtention des diplômes PSC1 et Premier Secours en Équipe de niveau 1 (PSE1) en 2025. Prêt à venir en aide en cas de besoin.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="projects-preview">
+        <section class="section projects-preview animate-on-scroll">
             <div class="container">
-                <h2>Projets Récents</h2>
+                <div class="section-header">
+                    <h2>Projets Récents</h2>
+                    <p>Découvrez quelques-uns de mes projets les plus récents et innovants</p>
+                </div>
                 <div class="projects-grid">
                     <div class="project-card">
                         <div class="project-image">
-                            <img src="img/emploi-temps.jpg" alt="Emploi du Temps IUT">
+                            <img src="img/emploi-temps.jpg" alt="Application Emploi du Temps IUT" loading="lazy">
                         </div>
                         <div class="project-info">
                             <h3>Emploi du Temps IUT d'Orsay</h3>
-                            <p>Application web permettant de consulter l'emploi du temps des étudiants de l'IUT d'Orsay.</p>
-                            <a href="projects.html#edt-iut" class="btn small">Voir le projet</a>
+                            <p>Application web moderne permettant de consulter l'emploi du temps des étudiants avec une interface intuitive et responsive.</p>
+                            <a href="projects.html#edt-iut" class="btn small primary">
+                                <i class="fas fa-eye"></i>
+                                Voir le projet
+                            </a>
                         </div>
                     </div>
                     <div class="project-card">
                         <div class="project-image">
-                            <img src="img/actinium.jpg" alt="ACTINIUM">
+                            <img src="img/actinium.jpg" alt="ACTINIUM Shell C++" loading="lazy">
                         </div>
                         <div class="project-info">
                             <h3>ACTINIUM</h3>
-                            <p>Shell C++ modulaire permettant de modifier le comportement des commandes à la volée.</p>
-                            <a href="projects.html#actinium" class="btn small">Voir le projet</a>
+                            <p>Shell C++ modulaire innovant permettant de modifier le comportement des commandes à la volée avec compilation intégrée.</p>
+                            <a href="projects.html#actinium" class="btn small primary">
+                                <i class="fas fa-eye"></i>
+                                Voir le projet
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="projects-more">
-                    <a href="projects.html" class="btn primary">Voir tous les projets</a>
+                <div class="text-center" style="margin-top: var(--space-2xl);">
+                    <a href="projects.html" class="btn primary">
+                        <i class="fas fa-folder-open"></i>
+                        Voir tous mes projets
+                    </a>
                 </div>
             </div>
         </section>
@@ -196,28 +241,47 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-info">
+                <div class="footer-section footer-info">
                     <h3>Arthur Pruvost Rivière</h3>
                     <p>Étudiant en BUT Informatique</p>
                     <p>IUT d'Orsay - Université Paris-Saclay</p>
+                    <p>Passionné par l'innovation technologique et le développement logiciel</p>
                 </div>
-                <div class="footer-contact">
+                <div class="footer-section footer-contact">
                     <h3>Contact</h3>
-                    <p><i class="fas fa-envelope"></i> <a href="mailto:arthurpruvost91140@gmail.com">arthurpruvost91140@gmail.com</a></p>
-                    <p><i class="fas fa-phone"></i> 07 77 23 31 91</p>
-                    <p><i class="fas fa-map-marker-alt"></i> 17, avenue Georges Pompidou, 91140 Villebon-sur-Yvette</p>
+                    <p>
+                        <i class="fas fa-envelope"></i> 
+                        <a href="mailto:arthurpruvost91140@gmail.com">arthurpruvost91140@gmail.com</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-phone"></i> 
+                        07 77 23 31 91
+                    </p>
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i> 
+                        17, avenue Georges Pompidou, 91140 Villebon-sur-Yvette
+                    </p>
+                    <p>
+                        <i class="fas fa-globe"></i>
+                        <a href="https://arthur.pruvost-riviere.fr/portfolio" target="_blank">Portfolio en ligne</a>
+                    </p>
                 </div>
-                <div class="footer-links">
-                    <h3>Liens Rapides</h3>
+                <div class="footer-section footer-links">
+                    <h3>Navigation</h3>
                     <ul>
                         <li><a href="index.html">Accueil</a></li>
                         <li><a href="projects.html">Projets</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
+                    <h3 style="margin-top: var(--space-lg);">Liens Externes</h3>
+                    <ul>
+                        <li><a href="https://github.com/Arthur-91140" target="_blank">GitHub</a></li>
+                        <li><a href="https://www.universite-paris-saclay.fr/" target="_blank">Université Paris-Saclay</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Arthur Pruvost Rivière. Tous droits réservés.</p>
+                <p>&copy; 2025 Arthur Pruvost Rivière. Tous droits réservés. Développé avec passion ❤️</p>
             </div>
         </div>
     </footer>
